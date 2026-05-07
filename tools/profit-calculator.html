@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profit Calculator</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<h1>Profit Calculator</h1>
+
+<input type="number" id="revenue"
+placeholder="Revenue">
+
+<input type="number" id="expense"
+placeholder="Expense">
+
+<button onclick="profit()">Calculate</button>
+
+<h2 id="result"></h2>
+
+<script>
+
+function profit(){
+
+let revenue =
+parseFloat(document.getElementById("revenue").value);
+
+let expense =
+parseFloat(document.getElementById("expense").value);
+
+let total = revenue - expense;
+
+document.getElementById("result").innerHTML =
+"Profit: ₹" + total;
+
+}
+
+</script>
+
+</body>
+</html>
